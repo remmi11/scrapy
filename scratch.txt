@@ -1,0 +1,9 @@
+.table-container .data-table-row-cell__link-block[data-type*=abbreviation]
+.table-container .data-table-row-cell[data-type*=value]
+.table-container .data-table-row-cell[data-type*=better]
+.table-container .data-table-row-cell[data-type*=time]
+
+name = response.css('.table-container .data-table-row-cell__link-block[data-type*=abbreviation]::text').extract()
+value = response.css('.table-container .data-table-row-cell[data-type*=value]::text').extract()
+change = response.css('.table-container .data-table-row-cell[data-type*=better]::text').extract()
+time = response.css('.table-container .data-table-row-cell[data-type*=time]::text').extract()
