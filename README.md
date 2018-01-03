@@ -1,8 +1,12 @@
-##scrapy startproject bloomberg
+scrapy startproject bloomberg
+-----------------------------
 
-##scrapy genspider bloombergbot https://www.bloomberg.com/markets/stocks
+scrapy genspider bloombergbot https://www.bloomberg.com/markets/stocks
+-----------------------------
 
-##edit bloombergbot.py
+edit bloombergbot.py
+-----------------------------
+
 Add the selectors
 ```
 name = response.css('.table-container .data-table-row-cell__link-block[data-type*=abbreviation]::text').extract()
