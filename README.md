@@ -44,4 +44,4 @@ FEED_URI = "bloomberg.csv"
 Final Results
 -----------------------------
 
-![](https://content.screencast.com/users/wtgeographer/folders/Jing/media/d3a4a986-5c2b-4924-8830-f9e0c8fe125c/2018-01-02_2330.png | width=300)
+![](https://content.screencast.com/users/wtgeographer/folders/Jing/media/d3a4a986-5c2b-4924-8830-f9e0c8fe125c/2018-01-02_2330.png)<!-- .element height="50%" width="50%" -->
