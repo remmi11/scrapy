@@ -1,8 +1,10 @@
-scrapy startproject bloomberg
+Initialize the project
 -----------------------------
+`scrapy startproject bloomberg`
 
-scrapy genspider bloombergbot https://www.bloomberg.com/markets/stocks
+Initialize the spider
 -----------------------------
+`scrapy genspider bloombergbot https://www.bloomberg.com/markets/stocks`
 
 edit bloombergbot.py
 -----------------------------
@@ -14,7 +16,8 @@ value = response.css('.table-container .data-table-row-cell[data-type*=value]::t
 change = response.css('.table-container .data-table-row-cell[data-type*=better]::text').extract()
 close = response.css('.table-container .data-table-row-cell[data-type*=time]::text').extract()
 ```
-####zip the response into a dictionary and yield
+
+zip the response into a dictionary and yield
 
 ```
 for item in zip(name,value,change,close):
