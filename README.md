@@ -6,7 +6,7 @@ Initialize the spider
 -----------------------------
 `scrapy genspider bloombergbot https://www.bloomberg.com/markets/stocks`
 
-edit bloombergbot.py
+Edit bloombergbot.py
 -----------------------------
 
 Add the selectors
@@ -32,3 +32,16 @@ for item in zip(name,value,change,close):
     #yield or give the scraped info to scrapy
     yield scraped_info
 ```
+
+Modify settings.py to generate csv
+-----------------------------
+```
+#Export as CSV Feed
+FEED_FORMAT = "csv"
+FEED_URI = "bloomberg.csv"
+```
+
+Final Results
+-----------------------------
+
+![alt text](https://content.screencast.com/users/wtgeographer/folders/Jing/media/d3a4a986-5c2b-4924-8830-f9e0c8fe125c/2018-01-02_2330.png)
